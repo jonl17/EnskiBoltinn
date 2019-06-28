@@ -8,6 +8,7 @@ export const BTN = styled.button`
   margin-right: 10px;
   &&:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 1px 2px gray;
   }
   ${props =>
     props.color === "green" &&
@@ -23,6 +24,11 @@ export const BTN = styled.button`
     `}
 `
 export const Paragraph = styled.p`
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800i&display=swap");
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   color: white;
   text-transform: uppercase;
+  font-size: 15px;
+  margin: 0;
 `
