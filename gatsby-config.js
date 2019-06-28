@@ -5,5 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Enski Boltinn`,
+    menuitems: [`Home`, `Live Score`, `Results`, `About`, `Contact`],
+  },
+  plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+  ],
 }
