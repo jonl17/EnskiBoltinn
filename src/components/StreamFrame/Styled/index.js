@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-left: solid white 2px;
   border-right: solid white 2px;
   display: grid;
-  grid-template-rows: 125px auto 125px;
+  grid-template-rows: 125px auto 150px;
   grid-template-areas:
     "twobtns"
     "video"
