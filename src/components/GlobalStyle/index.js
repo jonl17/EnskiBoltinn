@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Sarpanch:800&display=swap');
-    html {
+    * {
         font-family: 'Sarpanch', sans-serif;
     }
     html, body, #___gatsby, #___gatsby>div {
@@ -20,11 +20,7 @@ export const GlobalStyles = createGlobalStyle`
             #008fc7 59.63%,
             #000000 84.9%,
             #000000 100%
-        );
-      
-      
-      
-      
+        );       
     }
    
 `

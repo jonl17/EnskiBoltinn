@@ -5,11 +5,15 @@ import {
   VideoContainer,
   LargeBtnContainer,
 } from "./Styled"
+import TwoBtns from "../TwoBtns"
 
 const StreamFrame = () => {
   return (
     <Container>
-      <TwoBtnsContainer></TwoBtnsContainer>
+      <TwoBtnsContainer>
+        <TwoBtns text={"Play Video"} color={"green"}></TwoBtns>
+        <TwoBtns text={"VAR Stream"} color={"blue"}></TwoBtns>
+      </TwoBtnsContainer>
       <VideoContainer></VideoContainer>
       <LargeBtnContainer></LargeBtnContainer>
     </Container>

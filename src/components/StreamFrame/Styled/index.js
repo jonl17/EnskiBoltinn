@@ -16,8 +16,8 @@ export const Container = styled.div`
 `
 export const TwoBtnsContainer = styled.div`
   box-sizing: border-box;
-  border: 1px solid white;
   grid-area: twobtns;
+  margin: auto;
 `
 export const VideoContainer = styled.div`
   box-sizing: border-box;
