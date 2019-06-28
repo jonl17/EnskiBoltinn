@@ -6,8 +6,11 @@ export const Container = styled.div`
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 100%;
   margin: auto;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
 `
 export const Item = styled.h1`
   text-transform: uppercase;
