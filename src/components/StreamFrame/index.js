@@ -6,6 +6,7 @@ import {
   LargeBtnContainer,
 } from "./Styled"
 import TwoBtns from "../TwoBtns"
+import LargeBtn from "../LargeBtn"
 
 const StreamFrame = () => {
   return (
@@ -15,7 +16,9 @@ const StreamFrame = () => {
         <TwoBtns text={"VAR Stream"} color={"blue"}></TwoBtns>
       </TwoBtnsContainer>
       <VideoContainer></VideoContainer>
-      <LargeBtnContainer></LargeBtnContainer>
+      <LargeBtnContainer>
+        <LargeBtn text={"Instant replay"}></LargeBtn>
+      </LargeBtnContainer>
     </Container>
   )
 }
