@@ -8,8 +8,8 @@ const Video = ({ play }) => {
     <ReactPlayer
       style={{
         boxSizing: "border-box",
-        paddingLeft: "50px",
-        paddingRight: "50px",
+        paddingLeft: "45px",
+        paddingRight: "45px",
       }}
       playing={play}
       width={"100%"}
