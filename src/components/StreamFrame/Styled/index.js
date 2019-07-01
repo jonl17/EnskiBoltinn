@@ -19,6 +19,7 @@ export const TwoBtnsContainer = styled.div`
   box-sizing: border-box;
   grid-area: twobtns;
   margin: auto;
+  display: flex;
 `
 export const VideoContainer = styled.div`
   position: relative;

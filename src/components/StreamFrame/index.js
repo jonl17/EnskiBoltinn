@@ -9,6 +9,8 @@ import TwoBtns from "../TwoBtns"
 import LargeBtn from "../LargeBtn"
 import Video from "../Video"
 import Ex from "../ExSpam"
+import ViewCount from "../ViewCount"
+
 import { connect } from "react-redux"
 import { triggerVideo } from "../../state/actions"
 
@@ -29,6 +31,7 @@ const StreamFrame = ({ play, dispatch }) => {
         <Video play={play}></Video>
       </VideoContainer>
       <LargeBtnContainer>
+        <ViewCount></ViewCount>
         <LargeBtn text={"Instant replay"}></LargeBtn>
       </LargeBtnContainer>
     </Container>

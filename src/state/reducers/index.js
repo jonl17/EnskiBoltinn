@@ -1,8 +1,9 @@
-import { TRIGGER_VIDEO, HIDE_EX } from "../actions"
+import { TRIGGER_VIDEO, HIDE_EX, INCREMENT_VIEWERS } from "../actions"
 
 const initialState = {
   play: false,
   exHidden: false,
+  viewers: 34,
 }
 
 export default (state = initialState, action) => {
@@ -14,6 +15,8 @@ export default (state = initialState, action) => {
       return { ...state, play: true }
     case HIDE_EX:
       return { ...state, exHidden: true } // a one time thing
+    case INCREMENT_VIEWERS:
+      return { ...state, viewers: state.viewers + 1 }
     default:
       return state
   }

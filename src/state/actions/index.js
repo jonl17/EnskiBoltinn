@@ -7,3 +7,7 @@ export const HIDE_EX = "HIDE_EX"
 export const hideEx = () => ({
   type: HIDE_EX,
 })
+export const INCREMENT_VIEWERS = "INCREMENT_VIEWERS"
+export const incrementViewers = () => ({
+  type: INCREMENT_VIEWERS,
+})
