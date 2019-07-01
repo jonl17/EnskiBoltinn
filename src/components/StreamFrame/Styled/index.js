@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   /* height: 100%; */
+  position: relative;
   margin-left: 250px;
   margin-right: 250px;
   border-top: solid white 2px;
@@ -20,8 +21,10 @@ export const TwoBtnsContainer = styled.div`
   margin: auto;
 `
 export const VideoContainer = styled.div`
+  position: relative;
   box-sizing: border-box;
   grid-area: video;
+  display: grid;
 `
 export const LargeBtnContainer = styled.div`
   box-sizing: border-box;

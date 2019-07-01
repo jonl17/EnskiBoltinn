@@ -8,6 +8,7 @@ import {
 import TwoBtns from "../TwoBtns"
 import LargeBtn from "../LargeBtn"
 import Video from "../Video"
+import Ex from "../ExSpam"
 import { connect } from "react-redux"
 import { triggerVideo } from "../../state/actions"
 
@@ -24,6 +25,7 @@ const StreamFrame = ({ play, dispatch }) => {
         <TwoBtns text={"VAR Stream"} color={"blue"}></TwoBtns>
       </TwoBtnsContainer>
       <VideoContainer>
+        <Ex></Ex>
         <Video play={play}></Video>
       </VideoContainer>
       <LargeBtnContainer>

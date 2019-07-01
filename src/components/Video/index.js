@@ -1,21 +1,23 @@
 import React from "react"
-import { dummyvideopath } from "../../constants"
-import ReactPlayer from "react-player"
+import soccerVideo from "../../../static/soccer.mp4"
+import Eidur from "../../../static/eidur.jpg"
 
-const Video = ({ play }) => {
-  console.log(play)
+const Video = () => {
   return (
-    <ReactPlayer
-      style={{
-        boxSizing: "border-box",
-        paddingLeft: "45px",
-        paddingRight: "45px",
-      }}
-      playing={play}
-      width={"95%"}
-      height={"100%"}
-      url={dummyvideopath}
-    ></ReactPlayer>
+    <>
+      <video
+        poster={Eidur}
+        controls
+        src={soccerVideo}
+        height="400px"
+        width="700px"
+        style={{
+          margin: "auto",
+          boxSizing: "border-box",
+          padding: "0 45px 0 45px",
+        }}
+      ></video>
+    </>
   )
 }
 
