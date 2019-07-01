@@ -12,7 +12,7 @@ const Video = ({ play }) => {
         paddingRight: "45px",
       }}
       playing={play}
-      width={"100%"}
+      width={"95%"}
       height={"100%"}
       url={dummyvideopath}
     ></ReactPlayer>
