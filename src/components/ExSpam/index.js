@@ -6,8 +6,8 @@ import { connect } from "react-redux"
 import { hideEx } from "../../state/actions"
 
 const Image = styled.img`
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   margin: auto;
   &&:hover {
     cursor: pointer;
@@ -17,7 +17,7 @@ const Container = styled.div`
   position: absolute;
   display: ${props => (props.hide ? "none" : "grid")};
   height: 100%;
-  width: 75%;
+  width: 700px;
   left: 0;
   top: 0;
   background-color: rgb(16, 16, 16, 0.3);
