@@ -23,7 +23,7 @@ export const Headline = styled.p`
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800i&display=swap");
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 600;
   color: black;
   text-align: center;
   margin: 0;

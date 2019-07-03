@@ -26,7 +26,6 @@ export const NewsContainer = styled.div`
   margin-bottom: 50px;
 `
 export const Title = styled.p`
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800i&display=swap");
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;

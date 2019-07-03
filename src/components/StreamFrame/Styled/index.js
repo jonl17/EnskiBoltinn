@@ -30,6 +30,8 @@ export const VideoContainer = styled.div`
 export const LargeBtnContainer = styled.div`
   box-sizing: border-box;
   grid-area: largebtn;
-  margin: auto 40px auto 40px;
-  display: grid;
+  margin: 20px 40px auto 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 `
