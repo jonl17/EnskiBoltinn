@@ -47,7 +47,7 @@ export const BTN = styled.button`
   &::before {
     border-radius: inherit;
     background-image: linear-gradient(
-    50deg,
+    0deg,
     #ffffff 0%,
     #fbfffb 0.27%,
     #8eff90 7.23%,
