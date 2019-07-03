@@ -9,8 +9,8 @@ export const Container = styled.div`
   width: 100%;
   margin: auto;
   box-sizing: border-box;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 250px;
+  padding-right: 250px;
 `
 export const Item = styled.h1`
   text-transform: uppercase;
