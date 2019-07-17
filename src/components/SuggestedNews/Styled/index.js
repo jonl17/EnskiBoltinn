@@ -21,8 +21,7 @@ export const Container = styled.div`
 export const NewsContainer = styled.div`
   height: 100%;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 25px;
+  grid-template-rows: repeat(4, 150px);
   margin-bottom: 50px;
 `
 export const Title = styled.p`

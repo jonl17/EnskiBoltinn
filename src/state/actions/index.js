@@ -11,3 +11,8 @@ export const INCREMENT_VIEWERS = "INCREMENT_VIEWERS"
 export const incrementViewers = () => ({
   type: INCREMENT_VIEWERS,
 })
+export const SET_DEVICE = "SET_DEVICE"
+export const setDevice = size => ({
+  type: SET_DEVICE,
+  size,
+})

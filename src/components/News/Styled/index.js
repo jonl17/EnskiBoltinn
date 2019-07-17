@@ -11,7 +11,7 @@ export const Box = styled.div`
   background-position: 100% 0%;
   background-size: 150px 100px;
   position: relative;
-  border-radius: 15px;
+  border-radius: 0 0 5px 5px;
 `
 export const HeadlineContainer = styled.div`
   height: 50px;

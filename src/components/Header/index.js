@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
-import { Container, Item } from "./Styled"
+import { Container, Item, MenuListContainer } from "./Styled"
 
 const GetTheItems = () => {
   return (
@@ -13,13 +14,42 @@ const GetTheItems = () => {
               menuitems
             }
           }
+          file(name: { eq: "bad_image" }) {
+            childImageSharp {
+              fluid(quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
         }
       `}
-      render={data =>
-        data.site.siteMetadata.menuitems.map((item, index) => (
-          <Item key={index}>{item}</Item>
-        ))
-      }
+      render={data => (
+        <>
+          <div
+            style={{
+              position: "relative",
+              boxSizing: "border-box",
+              padding: "5px",
+            }}
+          >
+            <Img
+              style={{
+                position: "absolute",
+                top: "0",
+                height: "100%",
+                width: "100%",
+              }}
+              imgStyle={{ objectFit: "contain" }}
+              fluid={data.file.childImageSharp.fluid}
+            ></Img>
+          </div>
+          {/* <MenuListContainer>
+            {data.site.siteMetadata.menuitems.map((item, index) => (
+              <Item key={index}>{item}</Item>
+            ))}
+          </MenuListContainer> */}
+        </>
+      )}
     ></StaticQuery>
   )
 }
