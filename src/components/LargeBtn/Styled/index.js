@@ -10,8 +10,7 @@ const glow = keyframes`
 `
 
 export const BTN = styled.button`
-  position: absolute;
-  bottom: 0;
+  position: relative;
   height: 90px;
   width: 100%;
   max-width: 600px;
@@ -64,16 +63,19 @@ export const BTN = styled.button`
     content: '';    
     display: block;
     height: 90px;
-    position: absolute;
-    bottom: 0; left: 0;
     opacity: 0;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     z-index: -100;
     transition: opacity 0.45s;
+    margin: auto;
   }
 `
 export const Text = styled.p`
+  position: absolute;
+  top: 15%;
+  height: 100%;
+  width: 100%;
   font-size: 45px;
   margin: 0;
   text-transform: uppercase;

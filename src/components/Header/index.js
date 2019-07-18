@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, Item, MenuListContainer } from "./Styled"
+import { Container } from "./Styled"
 
 const GetTheItems = () => {
   return (
@@ -43,11 +43,6 @@ const GetTheItems = () => {
               fluid={data.file.childImageSharp.fluid}
             ></Img>
           </div>
-          {/* <MenuListContainer>
-            {data.site.siteMetadata.menuitems.map((item, index) => (
-              <Item key={index}>{item}</Item>
-            ))}
-          </MenuListContainer> */}
         </>
       )}
     ></StaticQuery>

@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  /* height: 100%; */
   position: relative;
   margin-left: 250px;
   margin-right: 250px;
@@ -9,11 +8,13 @@ export const Container = styled.div`
   border-left: solid white 2px;
   border-right: solid white 2px;
   display: grid;
-  grid-template-rows: 100px auto 150px;
+  grid-template-rows: 40px 100px auto 150px 100px;
   grid-template-areas:
+    "nav"
     "twobtns"
     "video"
-    "largebtn";
+    "largebtn"
+    "logo";
 `
 export const TwoBtnsContainer = styled.div`
   box-sizing: border-box;
