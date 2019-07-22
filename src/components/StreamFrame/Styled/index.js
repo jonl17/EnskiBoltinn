@@ -4,9 +4,9 @@ export const Container = styled.div`
   position: relative;
   margin-left: 250px;
   margin-right: 250px;
-  border-top: solid white 2px;
-  border-left: solid white 2px;
-  border-right: solid white 2px;
+  border-top: solid rgba(255, 255, 255, 0.7) 2px;
+  border-left: solid rgba(255, 255, 255, 0.7) 2px;
+  border-right: solid rgba(255, 255, 255, 0.7) 2px;
   display: grid;
   grid-template-rows: 40px 100px auto 150px 100px;
   grid-template-areas:
