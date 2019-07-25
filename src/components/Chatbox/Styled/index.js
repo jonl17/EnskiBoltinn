@@ -31,6 +31,8 @@ export const InputBox = styled.div`
 `
 export const Type = styled.input`
   width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 `
 export const Send = styled.button`
   height: 40px;
