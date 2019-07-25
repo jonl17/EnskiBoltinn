@@ -14,8 +14,7 @@ const initialState = {
   /* countdown */
   gameStart: new Date("24 Aug, 2019 14:00:00").getTime(),
   currentTime: new Date().getTime(),
-  countdownStatus:
-    new Date("24 Aug, 2019 14:00:00").getTime() - new Date().getTime(),
+  countdownStatus: undefined,
 }
 
 export default (state = initialState, action) => {

@@ -10,10 +10,9 @@ class Countdown extends React.Component {
   componentDidMount() {
     this.interval = setInterval(() => this.props.dispatch(countdown()), 1000)
   }
-  update() {}
   render() {
     const { countdownStatus } = this.props
-    return (
+    return countdownStatus !== undefined ? (
       <Container>
         <Title>Countdown</Title>
         <TimeBlock>
@@ -29,6 +28,8 @@ class Countdown extends React.Component {
           <Date>MIN</Date>
         </TimeBlock>
       </Container>
+    ) : (
+      <Container></Container>
     )
   }
 }
