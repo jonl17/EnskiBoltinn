@@ -16,3 +16,10 @@ export const setDevice = size => ({
   type: SET_DEVICE,
   size,
 })
+
+// countdown actions
+export const COUNTDOWN = "COUNTDOWN"
+export const countdown = () => ({
+  type: COUNTDOWN,
+  now: new Date().getTime(),
+})

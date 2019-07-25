@@ -3,6 +3,7 @@ import {
   HIDE_EX,
   INCREMENT_VIEWERS,
   SET_DEVICE,
+  COUNTDOWN,
 } from "../actions"
 
 const initialState = {
@@ -10,6 +11,11 @@ const initialState = {
   exHidden: false,
   viewers: 34,
   device: `sBrowser`,
+  /* countdown */
+  gameStart: new Date("24 Aug, 2019 14:00:00").getTime(),
+  currentTime: new Date().getTime(),
+  countdownStatus:
+    new Date("24 Aug, 2019 14:00:00").getTime() - new Date().getTime(),
 }
 
 export default (state = initialState, action) => {
@@ -41,6 +47,8 @@ export default (state = initialState, action) => {
         tmpDevice = `sMobile`
       }
       return { ...state, device: tmpDevice }
+    case COUNTDOWN:
+      return { ...state, countdownStatus: state.gameStart - action.now }
     default:
       return state
   }

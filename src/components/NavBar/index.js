@@ -16,7 +16,9 @@ const spitOutMenuItems = () => {
         }
       `}
       render={data =>
-        data.site.siteMetadata.menuitems.map(item => <Button>{item}</Button>)
+        data.site.siteMetadata.menuitems.map((item, index) => (
+          <Button key={index}>{item}</Button>
+        ))
       }
     ></StaticQuery>
   )

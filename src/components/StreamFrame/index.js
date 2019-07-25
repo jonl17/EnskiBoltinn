@@ -9,7 +9,7 @@ import TwoBtns from "../TwoBtns"
 import LargeBtn from "../LargeBtn"
 import Video from "../Video"
 import Ex from "../ExSpam"
-import ViewCount from "../ViewCount"
+// import ViewCount from "../ViewCount"
 import NavBar from "../NavBar"
 import FootyStream from "../FootyStream"
 
