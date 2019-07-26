@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   height: 100%;
+  max-height: 300px;
   width: 75%;
   background: linear-gradient(
     135deg,
@@ -17,11 +18,24 @@ export const Container = styled.div`
   font-size: 13px;
 `
 
+/* output */
 export const OutputBox = styled.div`
   color: black;
   box-sizing: border-box;
   overflow-y: scroll;
+  font-family: Arial, Helvetica, sans-serif;
 `
+export const Username = styled.p`
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+`
+export const Message = styled.p`
+  color: gray;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+`
+
+/* input */
 export const InputBox = styled.div`
   color: black;
   box-sizing: border-box;
@@ -33,6 +47,7 @@ export const Type = styled.input`
   width: 100%;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 `
 export const Send = styled.button`
   height: 40px;
@@ -40,4 +55,10 @@ export const Send = styled.button`
   position: absolute;
   right: 0;
   box-sizing: border-box;
+`
+export const BallBTN = styled.img`
+  width: 100%;
+  height: 25px;
+  box-sizing: border-box;
+  margin-top: 5px;
 `

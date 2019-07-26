@@ -12,7 +12,7 @@ const Chatbox = () => {
           "anon29384: PISS OFF \n\n ali444989: SCUM \n\n GeorgeMacNeal22: Great pieace of football we seeing here"
         }
       ></Output>
-      <Input text={"Please be polite!"}></Input>
+      <Input text={"Say something..."}></Input>
     </Container>
   )
 }
