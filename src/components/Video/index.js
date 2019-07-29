@@ -19,6 +19,7 @@ const Video = () => {
           boxSizing: "border-box",
           padding: "0 45px 0 45px",
           objectFit: "cover",
+          width: "75%",
         }}
       ></video>
     </>

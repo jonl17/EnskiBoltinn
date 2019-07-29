@@ -16,7 +16,6 @@ export const Container = styled.div`
     `}
 
   width: 250px;
-  height: 100%;
 `
 export const NewsContainer = styled.div`
   height: 100%;
