@@ -1,13 +1,12 @@
 import React from "react"
 import { Box, Headline, HeadlineContainer } from "./Styled"
 
-const News = () => {
+const News = ({ caption, image }) => {
+  console.log(image)
   return (
-    <Box>
+    <Box image={image.childImageSharp.fluid.src}>
       <HeadlineContainer>
-        <Headline>
-          Pogba's done it yet again! Free Streams for every goal
-        </Headline>
+        <Headline>{caption}</Headline>
       </HeadlineContainer>
     </Box>
   )

@@ -1,12 +1,11 @@
 import styled from "styled-components"
-import pogba from "../../../../static/pogba.png"
 
 export const Box = styled.div`
   background-color: white;
   height: 150px;
   width: 150px;
   margin: auto;
-  background-image: url(${pogba});
+  background-image: url(${props => props.image});
   background-repeat: no-repeat;
   background-position: 100% 0%;
   background-size: 150px 100px;

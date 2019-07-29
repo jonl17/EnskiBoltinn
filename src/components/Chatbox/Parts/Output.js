@@ -8,7 +8,7 @@ const spitOutMessages = index => {
     <StaticQuery
       query={graphql`
         {
-          allMarkdownRemark {
+          allMarkdownRemark(filter: { frontmatter: { type: { eq: "chat" } } }) {
             edges {
               node {
                 frontmatter {

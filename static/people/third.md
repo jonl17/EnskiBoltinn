@@ -1,4 +1,5 @@
 ---
+type: "chat"
 username: "soccerFanNO1"
 messages:
   [

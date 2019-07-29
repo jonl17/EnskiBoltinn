@@ -1,8 +1,44 @@
 import React from "react"
 import { connect } from "react-redux"
+import { graphql, StaticQuery } from "gatsby"
 
 import { Container, Title, NewsContainer } from "./Styled"
 import News from "../News"
+
+const getAds = () => {
+  return (
+    <StaticQuery
+      query={graphql`
+        {
+          allMarkdownRemark(filter: { frontmatter: { type: { eq: "ad" } } }) {
+            edges {
+              node {
+                frontmatter {
+                  caption
+                  image {
+                    childImageSharp {
+                      fluid {
+                        src
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data =>
+        data.allMarkdownRemark.edges.map(item => (
+          <News
+            image={item.node.frontmatter.image}
+            caption={item.node.frontmatter.caption}
+          ></News>
+        ))
+      }
+    ></StaticQuery>
+  )
+}
 
 const SuggestedNews = ({ positioning, device }) => {
   console.log(device)
@@ -10,12 +46,7 @@ const SuggestedNews = ({ positioning, device }) => {
     <>
       <Container positioning={positioning}>
         <Title>Suggested News</Title>
-        <NewsContainer>
-          <News></News>
-          <News></News>
-          <News></News>
-          <News></News>
-        </NewsContainer>
+        <NewsContainer>{getAds()}</NewsContainer>
       </Container>
     </>
   )
