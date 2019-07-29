@@ -21,7 +21,6 @@ export const NewsContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-rows: repeat(4, 150px);
-  margin-bottom: 50px;
 `
 export const Title = styled.p`
   font-family: "Open Sans", sans-serif;
