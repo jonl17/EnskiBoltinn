@@ -4,6 +4,7 @@ import {
   INCREMENT_VIEWERS,
   SET_DEVICE,
   COUNTDOWN,
+  SET_MODE,
 } from "../actions"
 
 const initialState = {
@@ -15,6 +16,7 @@ const initialState = {
   gameStart: new Date("24 Aug, 2019 14:00:00").getTime(),
   currentTime: new Date().getTime(),
   countdownStatus: undefined,
+  mode: `stream` /* stream OR ad */,
 }
 
 export default (state = initialState, action) => {
@@ -48,6 +50,15 @@ export default (state = initialState, action) => {
       return { ...state, device: tmpDevice }
     case COUNTDOWN:
       return { ...state, countdownStatus: state.gameStart - action.now }
+    case SET_MODE:
+      var tempMode = ""
+      if (state.mode === `stream`) {
+        tempMode = `ad`
+      }
+      if (state.mode === `ad`) {
+        tempMode = `stream`
+      }
+      return { ...state, mode: tempMode }
     default:
       return state
   }

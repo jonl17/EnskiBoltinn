@@ -1,9 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  position: relative;
-  margin-left: 250px;
-  margin-right: 250px;
+  grid-area: mainvideo;
   display: grid;
   grid-template-rows: 40px 100px auto 150px 100px;
   grid-template-areas:

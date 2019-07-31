@@ -2,7 +2,6 @@ import React from "react"
 import { connect } from "react-redux"
 import { setDevice } from "../../state/actions"
 
-import { GlobalStyles } from "../GlobalStyle"
 import { Container } from "./Styled"
 
 class Theme extends React.Component {
@@ -13,7 +12,6 @@ class Theme extends React.Component {
     const { children } = this.props
     return (
       <>
-        <GlobalStyles></GlobalStyles>
         <Container>{children}</Container>
       </>
     )

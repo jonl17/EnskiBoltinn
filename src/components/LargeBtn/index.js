@@ -1,12 +1,15 @@
 import React from "react"
 import { BTN, Text } from "./Styled"
 
-const LargeBtn = ({ text }) => {
+import { connect } from "react-redux"
+import { setMode } from "../../state/actions"
+
+const LargeBtn = ({ text, dispatch }) => {
   return (
-    <BTN>
+    <BTN onClick={() => dispatch(setMode())}>
       <Text>{text}</Text>
     </BTN>
   )
 }
 
-export default LargeBtn
+export default connect()(LargeBtn)

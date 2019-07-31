@@ -6,22 +6,12 @@ export const GlobalStyles = createGlobalStyle`
     * {
         font-family: 'Sarpanch', sans-serif;
     }
-    html, body, #___gatsby, #___gatsby>div {
+    html, body {
         height: 100%;
         width: 100%;
+        top: 0;
         margin: 0;
     }
-    body {
-        background: linear-gradient(
-            180deg,
-            #000000 0%,
-            #000000 23.44%,
-            #0086b9 40.51%,
-            #00aff2 50%,
-            #008fc7 59.63%,
-            #000000 84.9%,
-            #000000 100%
-        );       
-    }
+ 
    
 `

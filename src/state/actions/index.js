@@ -23,3 +23,8 @@ export const countdown = () => ({
   type: COUNTDOWN,
   now: new Date().getTime(),
 })
+
+export const SET_MODE = "SET_MODE"
+export const setMode = () => ({
+  type: SET_MODE,
+})

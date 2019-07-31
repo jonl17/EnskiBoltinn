@@ -23,7 +23,12 @@ const spitOutLogo = () => {
       `}
       render={data => (
         <Img
-          style={{ height: "100%", width: "50%", margin: "auto" }}
+          style={{
+            gridArea: "logo",
+            height: "100%",
+            width: "50%",
+            margin: "auto",
+          }}
           imgStyle={{ objectFit: "contain" }}
           fluid={data.allImageSharp.edges[0].node.fluid}
         ></Img>

@@ -8,7 +8,7 @@ import {
 import TwoBtns from "../TwoBtns"
 import LargeBtn from "../LargeBtn"
 import Video from "../Video"
-import Ex from "../ExSpam"
+// import Ex from "../ExSpam"
 // import ViewCount from "../ViewCount"
 import NavBar from "../NavBar"
 import FootyStream from "../FootyStream"
@@ -16,7 +16,7 @@ import FootyStream from "../FootyStream"
 import { connect } from "react-redux"
 import { triggerVideo } from "../../state/actions"
 
-const StreamFrame = ({ play, dispatch }) => {
+const StreamFrame = ({ play, dispatch, mode }) => {
   return (
     <Container>
       <NavBar></NavBar>
@@ -30,11 +30,10 @@ const StreamFrame = ({ play, dispatch }) => {
         <TwoBtns text={"VAR Stream"} color={"blue"}></TwoBtns>
       </TwoBtnsContainer>
       <VideoContainer>
-        <Ex></Ex>
-        <Video play={play}></Video>
+        {/* <Ex></Ex> */}
+        <Video mode={mode} play={play}></Video>
       </VideoContainer>
       <LargeBtnContainer>
-        {/* <ViewCount></ViewCount> */}
         <LargeBtn text={"Instant replay"}></LargeBtn>
       </LargeBtnContainer>
       <FootyStream></FootyStream>
