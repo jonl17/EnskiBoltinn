@@ -25,18 +25,10 @@ const GetTheItems = () => {
       `}
       render={data => (
         <>
-          <div
-            style={{
-              position: "relative",
-              boxSizing: "border-box",
-              padding: "5px",
-            }}
-          >
+          <div>
             <Img
               style={{
-                position: "absolute",
-                top: "0",
-                height: "100%",
+                height: "100px",
                 width: "100%",
               }}
               imgStyle={{ objectFit: "contain" }}

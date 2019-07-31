@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import { TRANSITION_SPEED } from "../../../constants"
 
 export const Container = styled.div`
   position: absolute;
@@ -11,7 +12,7 @@ export const Container = styled.div`
   width: 100%;
   color: white;
   background: linear-gradient(180deg, #00aff2 0%, #94e2ff 48.96%, #00abf0 100%);
-  transition: 4s;
+  transition: ${TRANSITION_SPEED}s;
   ${props =>
     props.mode === `stream` &&
     css`

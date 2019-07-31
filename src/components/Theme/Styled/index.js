@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { TRANSITION_SPEED } from "../../../constants"
 
 export const Container = styled.div`
   position: absolute;
@@ -20,4 +21,17 @@ export const Container = styled.div`
     #000000 84.9%,
     #000000 100%
   );
+  transition: ${TRANSITION_SPEED}s;
+  ${props =>
+    props.mode === `ad` &&
+    css`
+      opacity: 0;
+      z-index: -2;
+    `}
+  ${props =>
+    props.mode === `stream` &&
+    css`
+      opacity: 1;
+      z-index: 2;
+    `}
 `

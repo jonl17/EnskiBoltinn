@@ -14,7 +14,7 @@ const index = ({ mode }) => {
   return (
     <>
       <Theme>
-        {/* <Header></Header> */}
+        <Header></Header>
         {/* <SuggestedNews positioning={"left"}></SuggestedNews> */}
         <StreamFrame mode={mode}></StreamFrame>
         {/* <RightPanel></RightPanel> */}

@@ -12,9 +12,10 @@ const Video = ({ mode }) => {
       <video
         poster={mode === `stream` ? Eidur : Gylfi}
         controls
-        src={soccervid}
+        src={mode === `ad` ? "" : soccervid}
         height="auto !important"
         width="100% !important"
+        muted={mode === `ad` ? true : false}
         style={{
           margin: "auto",
           boxSizing: "border-box",

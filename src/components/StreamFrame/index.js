@@ -16,19 +16,27 @@ import FootyStream from "../FootyStream"
 import { connect } from "react-redux"
 import { triggerVideo } from "../../state/actions"
 
+import AppLogo from "../AppLogo/index"
+
 const StreamFrame = ({ play, dispatch, mode }) => {
   return (
     <Container>
-      <NavBar></NavBar>
-      <TwoBtnsContainer>
-        <TwoBtns
-          play={play}
-          click={() => dispatch(triggerVideo())}
-          text={"Play Video"}
-          color={"green"}
-        ></TwoBtns>
-        <TwoBtns text={"VAR Stream"} color={"blue"}></TwoBtns>
-      </TwoBtnsContainer>
+      {mode === `ad` ? (
+        <AppLogo></AppLogo>
+      ) : (
+        <>
+          <NavBar></NavBar>
+          <TwoBtnsContainer>
+            <TwoBtns
+              play={play}
+              click={() => dispatch(triggerVideo())}
+              text={"Play Video"}
+              color={"green"}
+            ></TwoBtns>
+            <TwoBtns text={"VAR Stream"} color={"blue"}></TwoBtns>
+          </TwoBtnsContainer>
+        </>
+      )}
       <VideoContainer>
         {/* <Ex></Ex> */}
         <Video mode={mode} play={play}></Video>

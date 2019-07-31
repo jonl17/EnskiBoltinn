@@ -7,8 +7,7 @@ export const Container = styled.div`
   display: grid;
   width: 100%;
   box-sizing: border-box;
-  padding-left: 250px;
-  padding-right: 250px;
+  grid-area: header;
 `
 export const MenuListContainer = styled.div`
   display: flex;
