@@ -25,7 +25,8 @@ const getImage = () => {
       render={data => (
         <Container>
           <Img
-            style={{ height: "100%", margin: "auto" }}
+            style={{ height: "75px", width: "100%", margin: "auto" }}
+            imgStyle={{ objectFit: "contain" }}
             fluid={data.allImageSharp.edges[0].node.fluid}
           ></Img>
         </Container>

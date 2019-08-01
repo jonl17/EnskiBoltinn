@@ -44,7 +44,7 @@ const StreamFrame = ({ play, dispatch, mode }) => {
       <LargeBtnContainer>
         <LargeBtn text={"Instant replay"}></LargeBtn>
       </LargeBtnContainer>
-      <FootyStream></FootyStream>
+      {mode === `stream` ? <FootyStream></FootyStream> : <p></p>}
     </Container>
   )
 }

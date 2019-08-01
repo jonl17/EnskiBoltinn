@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import { Container } from "./Styled"
+import SiminnLogo from "../SiminnLogo"
 
 const GetTheItems = () => {
   return (
@@ -41,8 +42,12 @@ const GetTheItems = () => {
   )
 }
 
-const Header = () => {
-  return <Container>{GetTheItems()}</Container>
+const Header = ({ mode }) => {
+  return mode === `ad` ? (
+    <SiminnLogo></SiminnLogo>
+  ) : (
+    <Container>{GetTheItems()}</Container>
+  )
 }
 
 export default Header

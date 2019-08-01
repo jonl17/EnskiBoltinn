@@ -5,4 +5,5 @@ export const Container = styled.div`
   width: 100%;
   display: grid;
   grid-area: nav / twobtns;
+  margin-top: 25px;
 `
