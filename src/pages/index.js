@@ -14,16 +14,16 @@ const index = ({ mode }) => {
   return (
     <>
       <Theme>
-        <Header mode={mode}></Header>
+        <Header mode={`stream`}></Header>
         <SuggestedNews positioning={"left"}></SuggestedNews>
-        <StreamFrame mode={mode}></StreamFrame>
+        <StreamFrame mode={`stream`}></StreamFrame>
         <RightPanel></RightPanel>
       </Theme>
 
       <ThemeTwo mode={mode}>
-        {/* <Header></Header>
-        <SuggestedNews positioning={"left"}></SuggestedNews> */}
-        <StreamFrame mode={mode}></StreamFrame>
+        <Header mode={`ad`}></Header>
+        {/* <SuggestedNews positioning={"left"}></SuggestedNews> */}
+        <StreamFrame mode={`ad`}></StreamFrame>
         {/* <RightPanel></RightPanel> */}
       </ThemeTwo>
     </>
