@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes, css } from "styled-components"
 
 const glow = keyframes`
    from {
@@ -9,6 +9,21 @@ const glow = keyframes`
    }
 `
 
+export const BTNblue = styled.button`
+  position: relative;
+  height: 90px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 150px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background-color: #00adf2;
+  &&:hover {
+    cursor: pointer;
+  }
+`
+
 export const BTN = styled.button`
   position: relative;
   height: 90px;
@@ -17,7 +32,6 @@ export const BTN = styled.button`
   margin: auto;
   border-radius: 15px;
   border: none;
-  z-index: 100;
   opacity: 1;
   &&:hover {
     cursor: pointer;
@@ -69,6 +83,7 @@ export const BTN = styled.button`
     z-index: -100;
     transition: opacity 0.45s;
     margin: auto;
+    box-sizing: border-box;
   }
 `
 export const Text = styled.p`
@@ -78,9 +93,12 @@ export const Text = styled.p`
   width: 100%;
   font-size: 45px;
   margin: 0;
-  text-transform: uppercase;
   color: white;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
+  ${props =>
+    props.mode === `stream` &&
+    css`
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    `}
 `
