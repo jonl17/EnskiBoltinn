@@ -14,7 +14,8 @@ export const Container = styled.div`
   position: relative;
   display: grid;
   grid-template-rows: auto 40px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 13px;
 `
 
