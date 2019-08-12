@@ -52,13 +52,15 @@ export default (state = initialState, action) => {
       return { ...state, countdownStatus: state.gameStart - action.now }
     case SET_MODE:
       var tempMode = ""
+      var tempExHidden = state.exHidden
       if (state.mode === `stream`) {
         tempMode = `ad`
+        tempExHidden = true
       }
       if (state.mode === `ad`) {
         tempMode = `stream`
       }
-      return { ...state, mode: tempMode }
+      return { ...state, mode: tempMode, exHidden: tempExHidden }
     default:
       return state
   }

@@ -19,6 +19,7 @@ export const BTNblue = styled.button`
   box-sizing: border-box;
   border: 1px solid white;
   background-color: #00adf2;
+  color: white;
   &&:hover {
     cursor: pointer;
   }
@@ -33,6 +34,7 @@ export const BTN = styled.button`
   border-radius: 15px;
   border: none;
   opacity: 1;
+  color: white;
   &&:hover {
     cursor: pointer;
     /* animation: ${glow} 0.3s ease infinite alternate; */
@@ -93,7 +95,7 @@ export const Text = styled.p`
   width: 100%;
   font-size: 45px;
   margin: 0;
-  color: white;
+  /* color: white; */
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   ${props =>

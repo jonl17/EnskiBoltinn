@@ -8,7 +8,7 @@ import {
 import TwoBtns from "../TwoBtns"
 import LargeBtn from "../LargeBtn"
 import Video from "../Video"
-// import Ex from "../ExSpam"
+import Ex from "../ExSpam"
 // import ViewCount from "../ViewCount"
 import NavBar from "../NavBar"
 import FootyStream from "../FootyStream"
@@ -38,7 +38,7 @@ const StreamFrame = ({ play, dispatch, mode }) => {
         </>
       )}
       <VideoContainer>
-        {/* <Ex></Ex> */}
+        <Ex></Ex>
         <Video mode={mode} play={play}></Video>
       </VideoContainer>
       <LargeBtnContainer>

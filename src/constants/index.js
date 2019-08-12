@@ -1,1 +1,1 @@
-export const TRANSITION_SPEED = 4
+export const TRANSITION_SPEED = 6
